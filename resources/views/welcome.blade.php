@@ -17,8 +17,8 @@
             </div>
             <hr>
             <div class="buttons">
-                <a href="{{ route('login') }}" class="button is-primary">Se connecter</a>
-                <a href="{{ route('register') }}" class="button is-text">S'enregistrer</a>
+                <a href="{{ route('login') }}" class="button is-primary">Login</a>
+                <a href="{{ route('register') }}" class="button is-text">Register</a>
             </div>
         @endcomponent
     @endcomponent

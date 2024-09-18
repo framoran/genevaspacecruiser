@@ -285,7 +285,7 @@ var game = {
 
 	var starsY = [];
 	for (var i = 0; i < 10; i++){
-	starsY.push(getRandomInt(25, 570));} // Math.random -> retourne un nombre aléatoire entre 0 et 1
+	starsY.push(getRandomInt(25, 500));} // Math.random -> retourne un nombre aléatoire entre 0 et 1
 
 	// On crée les paramètres pour l'affichage des Gros Rochers pour les positions de x et y
 	var RockX = [];
@@ -615,7 +615,7 @@ this.timeStart = timeStart;
 		        var timeImpact = timeTemp.getTime() - myGamePiece_Time.timeStart;
 		        impact.push(timeImpact);
 				RockX[j] = (getRandomInt(1600, 2500));
-				RockY[j] = (getRandomInt(25, 570));
+				RockY[j] = (getRandomInt(25, 500));
 				if (myGamePiece_Affichage.score1 > 0 && myGamePiece_Affichage.score1 <=10){
 				    myGamePiece_Affichage.score1 = 0;
 				}
@@ -642,7 +642,7 @@ this.timeStart = timeStart;
 				RocherExplosion(myGamePiece_GrosRocher, myGamePiece_Missile)
 				// fait disparaitre le rocher et le missile
 				RockX[j] = (getRandomInt(2000, 3000));
-				RockY[j] = (getRandomInt(25, 570));
+				RockY[j] = (getRandomInt(25, 500));
 				}
 
 			// Check si trop proche d'un autre rocher
@@ -654,7 +654,7 @@ this.timeStart = timeStart;
     			     (x != j) )
     			    {
     				RockX[j] = (getRandomInt(2000, 3000))
-    				RockY[j] = (getRandomInt(25, 570))
+    				RockY[j] = (getRandomInt(25, 500))
 
     			    }
     		    }
@@ -675,7 +675,7 @@ this.timeStart = timeStart;
 					starsX[j] -= 2;
 				if (starsX[j]  < -50){
 					starsX[j]  = (getRandomInt(1600, 2500))
-					starsY[j] = (getRandomInt(25, 570))
+					starsY[j] = (getRandomInt(25, 500))
 			}
 			// Check si contact avec le vaisseau
 			if ((myGamePiece_Vaisseau.x > (starsX[j] - 100)) && (myGamePiece_Vaisseau.x < (starsX[j] + 25)) && (myGamePiece_Vaisseau.y > (starsY[j] - 90)) && (myGamePiece_Vaisseau.y < (starsY[j] + 50))) {
@@ -685,7 +685,7 @@ this.timeStart = timeStart;
 				getStar(myGamePiece_Vaisseau);
 				checkimpact2(myGamePiece_Vaisseau);
 				starsX[j] = (getRandomInt(1600, 2500));
-				starsY[j] = (getRandomInt(25, 570));
+				starsY[j] = (getRandomInt(25, 500));
 				if (myGamePiece_Affichage.score1 >= 0){
     				    myGamePiece_Affichage.score1 += 1;
     				    }}
@@ -699,7 +699,7 @@ this.timeStart = timeStart;
     			     (x != j) )
     			{
     				starsX[j] = (getRandomInt(1600, 2500))
-    				starsY[j] = (getRandomInt(25, 570))
+    				starsY[j] = (getRandomInt(25, 500))
     				}
 			    }
 			}
